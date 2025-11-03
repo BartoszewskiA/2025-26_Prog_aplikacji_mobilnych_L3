@@ -57,7 +57,7 @@
         android:id="@+id/button02"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/btn_p"
+        android:text="@string/btn_n"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/guideline"
