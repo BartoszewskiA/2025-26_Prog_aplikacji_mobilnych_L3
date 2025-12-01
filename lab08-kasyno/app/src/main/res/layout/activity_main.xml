@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_tytul"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="KASYNO"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66"/>
+
+    <ImageView
+        android:id="@+id/iv_01"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/gl_33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tytul"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/rys01"/>
+
+    <ImageView
+        android:id="@+id/iv_02"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/gl_66"
+        app:layout_constraintStart_toStartOf="@+id/gl_33"
+        app:layout_constraintTop_toBottomOf="@id/tv_tytul"
+        android:src="@drawable/rys02"/>
+
+    <ImageView
+        android:id="@+id/iv_03"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gl_66"
+        app:layout_constraintTop_toBottomOf="@id/tv_tytul"
+        android:src="@drawable/rys04"/>
+
+    <Button
+        android:id="@+id/btn_graj"
+        android:text="GRAJ"
+        android:textSize="40sp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#8BC34A"/>
+
+    <TextView
+        android:id="@+id/tv_kwota"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="$ 100"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_graj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_02"
+        android:background="#DDFB9C"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
